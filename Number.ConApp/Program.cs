@@ -30,8 +30,17 @@ namespace Number.ConApp
 			{
 				output = $"{number} ist KEINE perfekte Zahl";
 			}
+			Console.WriteLine(output);
 
 			// Ausgabe (A)
+			if (Number.Logic.NumberProperty.IsPrime(number))
+			{
+				output = $"{number} ist eine Primzahl:-)";
+			}
+			else
+			{
+				output = $"{number} ist KEINE Primzahl";
+			}
 			Console.WriteLine(output);
 		}
 	}
